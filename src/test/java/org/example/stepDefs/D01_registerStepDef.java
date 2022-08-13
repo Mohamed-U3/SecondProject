@@ -12,13 +12,13 @@ public class D01_registerStepDef
     P01_register page = new P01_register();
 
     @Given("user go to register page")
-    public void register_page()
+    public void Register_page()
     {
         page.registerBtn.click();
     }
 
     @And("user select gender type")
-    public void genderselect()
+    public void GenderSelect()
     {
         page.MaleGender.click();
     }
@@ -65,9 +65,9 @@ public class D01_registerStepDef
     @Then("success message is displayed")
     public void Registeration_Success_Message_Assertion()
     {
-
         SoftAssert soft = new SoftAssert();
         soft.assertEquals(page.ResultText.getText(),"Your registration completed",
                 "The Registration Fail To Finish Correctly");
+        soft.assertAll();
     }
 }
