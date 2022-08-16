@@ -34,13 +34,4 @@ public class P03_homePage
 
     @FindBy(css = "div[class ='message-error validation-summary-errors']")
     public WebElement ErrorMassage;
-
-    @FindBy(id = "small-searchterms")
-    public WebElement SearchField;
-
-    @FindBy(css = "h2[class='product-title'] a")
-    public WebElement ProductTitle;
-
-    @FindBy(css = "div[class='sku'] span[class='value']")
-    public WebElement SkuField;
 }
